@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya's Portfolio</title>
+    <link rel="stylesheet" href="CSS/style.CSS">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Poppins:wght@300&family=Young+Serif&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Port<span>Folio</span></h1>
+            </div>
+            <div class="list">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#skill">Skills</a></li>
+                    <li><a href="#contact">Conatct Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section id="home">
+        <div class="desc">
+            <h1>Hi, I am <span>Aditya</span>
+                <div>and I am a Passionate</div>
+                <span id="element"></span>
+            </h1>
+        </div>
+        <div class="rightdesc">
+            <div class="profile">
+                <img src="profile.jpg" alt="profile picture">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="leftsection">
+            <div class="aboutimage">
+                <img src="skills.jpg" alt="">
+            </div>
+        </div>
+        <div class="rightsection">
+            <h1>About Me</h1>
+            <p>Passionate and skilled B.Tech student in Computer Science and Engineering at Gandhi Engineering College,
+                I am a Web Developer proficient
+                in HTML, CSS, and JavaScript, with a knack for creating responsive websites. Beyond coding, I possess a
+                diverse skill set, including a
+                foundation in Java and C, as well as a deep interest in photography and video editing, reflecting my
+                creative side. My internship at Oasis
+                Infobyte honed my web development skills and provided valuable real-world experience.What sets me apart
+                are my quick learning abilities
+                and unwavering positive attitude. I excel in grasping new concepts swiftly and am always eager to take
+                on challenges. Looking ahead, I aim
+                to further develop my coding expertise, explore innovative technologies, and collaborate with
+                like-minded individuals to create cutting-edge
+                web solutions. I believe my enthusiasm, dedication, and adaptability make me a valuable asset to any
+                team, whether in a corporate or startup
+                environment. Let's connect and explore opportunities to create impactful projects together</p>
+        </div>
+    </section>
+    <section id="project">
+
+    </section>
+    <section id="skill">
+        <div class="leftimage">
+            <div class="skillimage">
+                <img src="projects.jpg" alt="skills">
+            </div>
+        </div>
+        <div class="skillsection">
+            <h1>Techncal Skills</h1>
+            <div class="container">
+                <div class="skillsets">
+                    <ul>
+                        <li class="skills">HTML</li>
+                        <li class="skills">HTML5</li>
+                        <li class="skills">CSS</li>
+                    </ul>
+                </div>
+                <div class="skillsets">
+                    <ul>
+                        <li class="skills">Media Queries</li>
+                        <li class="skills">Java Script</li>
+                        <li class="skills">Java</li>
+                    </ul>
+                </div>
+                <div class="skillsets">
+                    <ul>
+                        <li class="skills">Photography</li>
+                        <li class="skills">Videography</li>
+                        <li class="skills">Video Editing</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="contactsection">
+            <h1>Contact Me</h1>
+            <div class="contactform">
+                <form action="">
+                    <label for="name">Name</label>
+                    <div><input type="text" name="name" id="name" placeholder="Enter your Name">
+                    </div>
+
+                    <label for="email">E-Mail</label>
+                    <div><input type="email" name="email" id="email" placeholder="Enter your E-Mail">
+                    </div>
+                    <div> </div>
+
+                    <label for="address">Address</label>
+                    <div><input type="text" name="address" id="address" placeholder="Enter your Address">
+                    </div>
+
+                    <label for="phnumber">Mobile Number</label>
+                    <div><input type="number" name="phnumber" id="phnumber" placeholder="Enter phone number">
+                    </div>
+                    <button class="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="contactimage">
+            <div class="imageborder">
+                <img src="contact.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Photographer', 'Web Designer', 'Video Editor'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
