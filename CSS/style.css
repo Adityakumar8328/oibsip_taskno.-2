@@ -64,10 +64,15 @@ body{
 }
 .desc{
     display: flex;
+    flex-direction: column;
     font-size: 2rem;
     width: 50%;
-    align-items: center;
+    justify-content: center;
     height: 100%;
+}.btn{
+    height: 6vh;
+    width: 9vw;
+
 }
 .rightdesc{
     width: 40%;
@@ -118,6 +123,80 @@ body{
 
 
 /* Project Section  */
+#project{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    margin-bottom: 8vh;
+}
+.projectleft{
+    width: 45%;
+}
+.projectleft h1{
+    color: #ff8600;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3vh;
+    border-bottom: solid 4px #ff8600 ;
+}
+.projectlist{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.projectdesc{
+    background-color: cyan;
+    border-radius: 15px;
+    height: 30vh;
+    width: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1vw 2vw;
+    padding: 0 3vw;
+    transition: all ease .3s;
+}
+.projectdesc:hover{
+    /* background-color: rgb(255, 116, 144); */
+    scale: 1.2;
+    box-shadow: 3px 5px 10px 4px rgb(0, 191, 255);
+}
+.projectdesc:hover::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background:linear-gradient(cyan, white) ;
+    border-radius: 15px;
+    opacity: .88;
+    z-index: -1;
+    
+}
+.projectdesc h3{
+    color: #4100d6;
+    margin-bottom: 1vh;
+    text-align: center;
+    border-bottom: solid 4px #4100d6;
+}
+.projectdesc ul li{
+    color: #0b0b1e;
+}
+.projectright{
+    width: 40%;
+}
+.projectright .projectimage{
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 5px solid white;
+}
+
 
 
 
@@ -127,7 +206,6 @@ body{
     justify-content: space-around;
     align-items: center;
     position: relative;
-    /* height: 100vh; */
 }
 .leftimage{
     width: 40%;
@@ -159,7 +237,7 @@ body{
     align-items: center;
 }
 .skillsets{
-    background-color: #17174f;
+    background-color: cyan;
     border-radius: 15px;
     height: 20vh;
     width: 30vh;display: flex;
@@ -180,6 +258,7 @@ body{
     list-style: none;
     margin-bottom: 1.2vh;
     font-weight: bold;
+    color: #0b0b1e;
 }
 
 
@@ -228,23 +307,36 @@ body{
     border: 5px solid white;
 }
 .submit{
-    background-color: cyan;
-    color: #0b0b1e;
-    margin: 5vh 0;
     height: 5vh;
     width: 8vw;
-    border: none;
-    font-weight: bold;
-    font-size: 1rem;
-    border-radius: 5px;
 }
-.submit:hover{
-    cursor: pointer;
-    background-color: rgb(3, 181, 181);
+
+
+
+/* bottom Section  */
+.contactme{
+    background-color: #2d427a;
+    
 }
-.submit:active{
-    scale: .95;
+.bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+.bottom p{
+    color: cyan;
+    text-align: center;
+}
+.bottom a{
+    color: cyan;
+    text-align: center;
+}
+.bottom h2{
+    color: cyan;
+    text-align: center;
+}
+
 
 
 /* Utility classes  */
@@ -266,5 +358,24 @@ img{
     transition: all ease .2s;
 }
 img:hover{
+    scale: .95;
+}
+button{
+    background-color: cyan;
+    color: #0b0b1e;
+    margin: 5vh 0;
+    border-color: cyan;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: all ease .3s;
+}
+button:hover{
+    cursor: pointer;
+    background-color: transparent;
+    border-color: cyan;
+    color: cyan;
+}
+button:active{
     scale: .95;
 }
